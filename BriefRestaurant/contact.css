@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Poppins&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Poppins&display=swap');
+:root {
+  --primaryfont: "Oleo Script Swash Caps", cursive;
+  --secondfont: "Poppins", sans-serif;
+  --primarycolor: #e1651f;
+  --secondcolor: #ffffff;
+  --thirdcolor: #000000;
+}
+.site-header .site-brand{
+    font-family: var(--primaryfont);
+    
+    text-align: center;
+    font-size: 24px;
+  }
+
+.here h1{
+  font-family: var(--primaryfont);
+}
