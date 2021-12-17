@@ -241,9 +241,11 @@ nav li:hover{
   bottom: -7px;
 }
 .all_menu{
-  display: grid;
-  grid-gap: 30px;
-  grid-template-columns: auto auto auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* grid-gap: 30px; */
+  /* grid-template-columns: auto auto auto; */
   width: 90%;
   margin-left: auto;
   margin-right: auto;
@@ -251,6 +253,8 @@ nav li:hover{
 }
 .iteam_menu{
 border: .5px solid rgba(0, 0, 0,.1);
+width: 285px;
+margin-top: 20px;
 
 }
 .img_menu img{
@@ -317,7 +321,7 @@ border: .5px solid rgba(0, 0, 0,.1);
 /* start listen constomers  ********************************/
 .all_comments{
   display: flex;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content:space-evenly;
   width: 90%;
@@ -354,7 +358,7 @@ border: .5px solid rgba(0, 0, 0,.1);
   }
 
   .comment{
-    width: 32%;
+    width: 250px;
     height: 350px;
     display: block;
   justify-content: center;
@@ -579,7 +583,7 @@ body{
   .new_event {
     width: 80%;
     top: 60%;
-    left: 10%;
+    left: 20%;
     text-align: center;
 
    }
@@ -598,14 +602,18 @@ body{
     width: 90%;
   }
   .iteam_menu{
-    width: 45%;
+    width: 270px;
     height: auto;
+    
+    margin-left: 10px;
+    margin-right: 10px;
     }
 
      /* listen costomer  */
      .comment{
       width: 40%;
       height: auto;
+     
      }
      .all_comments{
       display: flex;
@@ -613,5 +621,50 @@ body{
      }
      .title_listen_costemer{
     width: 60%;
+    }
+
+    /* local  */
+    .container_local {
+      width: 90%;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      flex-wrap: wrap;
+     
+      
+  }
+}
+
+
+@media (min-width:800px) and (max-width:1200px){
+
+  .text_main {
+    position: absolute;
+    width: 90%;
+    top: 25%;
+    left: 32%;
+   }
+   .new_event {
+     width: 60%;
+     top: 60%;
+     left: 40%;
+     text-align: center;
+ 
+    }
+  .text_main {
+    position: absolute;
+    width: 90%;
+    top: 2%;
+    left: 2%;
+   }
+
+
+   .iteam_menu{
+    width: 270px;
+    height: auto;
+    
+    margin-left: 5px;
+    margin-right: 5px;
     }
 }
